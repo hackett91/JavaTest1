@@ -42,7 +42,7 @@ public class Tune implements Player{
 	}
 
 	public String toString(){
-		if(alTitle = ""){
+		if(alTitle == ""){
 			return String.format("%d, %s", x, title);
 
 		}
