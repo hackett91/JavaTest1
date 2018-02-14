@@ -13,7 +13,7 @@ public class Tune implements Player{
 
 	public void play(){
 		
-		TuneBook tune = new TuneBook();
+		TuneBook tune = new TuneBook("hnj0.abc");
 
 		tune.toString();
 	}
@@ -30,7 +30,7 @@ public class Tune implements Player{
 	public String getNotation(){
 		return notation;
 	}
-	public void setX(String element){
+	public void setX(int element){
 		this.x = element;
 
 	}

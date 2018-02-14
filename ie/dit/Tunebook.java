@@ -77,7 +77,7 @@ public class TuneBook{
 
 		return sb.toString();
 	}
-	}
+	
 
 	  public void loadFile()
 	  {
@@ -91,16 +91,16 @@ public class TuneBook{
 	    try{
 
 		      myText = new BufferedReader(new FileReader(this.abc));
-		      String l;
+		      String l = "";
 
 		      while ((l=myText.readLine())!=null )
 		       {
-		        if(startWith(l) == "X")
+		        if(l.startWith("X"))
 		        {
 		        	tune.setX(l);
 		        	x_count++;
 		        }
-		        if(startWith(l) == "T")
+		        if(l.startWith("T"))
 		        {
 		        	t_count++;
 		 
